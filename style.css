@@ -1,18 +1,24 @@
 /*Cada elemento da paleta de cores deverá ter uma borda preta, sólida e com 1 pixel de largura;*/
 button {
-    border: 1px solid black;
-    display: inline-block ; 
-    width: 80px;
-    height: 80px;
-    margin: 5px;
+  border: 1px solid black;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
-.pixel { 
-    background: white;
-    width: 40px;
-    height: 40px;
-    border: black solid 1px;
-    max-width: 100%;
-    display: inline-block;
-    padding: 30px;
-    margin: 0%;
+.pixel {
+  background: white;
+  width: 40px;
+  height: 40px;
+  border: black solid 1px;
+  max-width: 100%;
+  display: inline-block;
+}
+
+#pixel-board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
 }

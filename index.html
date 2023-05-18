@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Projeto Pixels Art</title>
-</head>
+  </head>
 
-<body>
-    <head>
-        <h1 class="title" id="title">Paleta de Cores</h1>
-    </head>
-        <section class="color-palette" id="color-palette">
-           
-            <div id="divButton">
-                <button id="button-random-color" >Cores aleatórias</button>
-            </div> 
-           
-        </section>
+  <body>
+    <main>
+      <h1 class="title" id="title">Paleta de Cores</h1>
 
-        <section id="pixel-board">
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div><br>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div><br>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div><br>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div><br>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div><br>
-          </section>
+      <section class="color-palette" id="color-palette">
+        <div id="divButton">
+          <button id="button-random-color">Cores aleatórias</button>
+          <button id="clear-board" onclick="clearPixel()">Limpar</button>
+        </div>
+      </section>
 
-<script src="script.js"></script>
-</body>
+      <div class="board-container">
+        <section id="pixel-board"></section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
