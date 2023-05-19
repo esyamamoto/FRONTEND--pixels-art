@@ -11,7 +11,7 @@ function button() {
     button.className = 'color';// classe de color para os outros botoes
     colorPalette.appendChild(button); // Adiciona o botão à paleta de cores
   }
-  const addSelect = document.querySelector('#black');
+  const addSelect = document.querySelector('#black');//esqueci de tirar do for e tava dando erro
   addSelect.classList.add('selected');
 }
 button();
@@ -33,11 +33,11 @@ pixelBoard();
 // botão para gerar cores aleatórias para a paleta de cores e cor preta como a primeira cor da paleta de cores
 function generateRandomColor() {
   const letters = '0123456789ABCDEF'; // Define os caracteres permitidos para representar uma cor hexadecimal
-  let color = '#'; // Começa com '#' para representar uma cor hexadecimal
+  let color = '#'; // '#' para representar uma cor hexadecimal
   for (let i = 0; i < 6; i += 1) { // Seleciona aleatoriamente um dígito da string 'letters' para cada um dos seis dígitos da cor
     color += letters[Math.floor(Math.random() * 16)]; //garantindo que o número esteja entre 0 e 15 (inclusivo).
   }
-  return color; // Retorna a cor hexadecimal gerada
+  return color; 
 }
 
 function generateRandomColors() { // Obtém os elementos HTML com a classe 'color'
@@ -52,6 +52,18 @@ buttonRandomColor.addEventListener('click', generateRandomColors); // que atribu
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // função localStorage para que a paleta de cores gerada aleatoriamente seja mantida após recarregar a página
 
+// function saveColorsLS() {
+//   const savedColor = localStorage.getItem('');
+//   const arrayColors = JSON.parse(savedColor);
+//   if (savedColor){
+//     for (let index = 1; index < color.length; index += 1) {
+//       color[index].style.backgroundColor = arrayColors[index - 1];
+//     }
+//   }
+// }
+
+//verifica se há uma paleta de cores salva, converte a string JSON de volta para um array de cores e, em seguida, percorre os elementos da paleta para atribuir as cores correspondentes.
+//rever aula?
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // função para selecionar uma cor na paleta de cores
 const colors = document.getElementsByClassName('color'); // Obtém todos os elementos com a classe "color"
